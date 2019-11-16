@@ -1,0 +1,75 @@
+Alexsander
+Partido 1
+10029
+
+Davi
+Partido 1
+10013
+
+Gabriel
+Partido 1
+10023
+
+Lucas
+Partido 1
+10026
+
+Marco
+Partido 1
+100026
+
+Airton
+Partido 2
+20025
+
+Daniel
+Partido 2
+20031
+
+Felipe
+Partido 2
+20030
+
+Luciano
+Partido 2
+20002
+
+Ygor
+Partido 2
+20027
+
+Rebecca
+Partido 3
+30008
+
+Gabriella
+Partido 3
+30019
+
+Jessica
+Partido 3
+30017
+
+Gessica
+Partido 3
+30025
+
+Anderson
+Partido 4
+40801
+
+Gian
+Partido 4
+40035
+
+Luiz
+Partido 4
+40002
+
+Rodrigo
+Partido 4
+40016
+
+Yuri
+Partido 4
+40033
