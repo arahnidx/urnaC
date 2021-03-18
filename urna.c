@@ -3,7 +3,7 @@
 #include <string.h>
 #define T 19 /*quantidade de candidatos, e necessario alterar caso adicione algum candidato*/
 
-int input,BRANCO,tvotos,nulo;  /*variaveis globais pois usei elas em mais de uma função*/
+int input,BRANCO,tvotos,nulo;  /*variaveis globais pois usei elas em mais de uma funÃ§Ã£o*/
 
 void init();
 void finalizar();
@@ -13,14 +13,14 @@ void interface();
 void inicio();
 void contagem();
 
-struct candidato {
+struct candidato { /* objeto candidato */
     char nome[100];  
     char partido[20];
     int votos;
     long int numero;
     };
 
-struct candidato lista[T];
+struct candidato lista[T]; /* "arraylist */
 
 main(){
     init();
@@ -70,7 +70,7 @@ void init(){  /*Carrega os candidatos contidos no arquivo de texto*/
     i = 0;
     BRANCO=0;
     nulo=0;
-    tvotos=0;
+    tvotos=0; 
     
     while(!feof(arq)){
         fgets(linha,100,arq);
@@ -84,7 +84,7 @@ void init(){  /*Carrega os candidatos contidos no arquivo de texto*/
 		else if(cont==3){
             lista[i].numero = atoi(linha);
         }
-		else if(cont==4){ /*cont 4 para pular uma linha e recomeçar pra ficar mais organizado o bloco de notas */
+		else if(cont==4){ /*cont 4 para pular uma linha e recomeÃ§ar pra ficar mais organizado o bloco de notas */
 		cont = 0;
         i++;	
 		} 
@@ -128,7 +128,7 @@ void finalizar(){
  		printf("\n\tVotos Nulos: %.2f%% (%d) \n" ,(((double)nulo)/tvotos)*100,nulo);
  	
 	 	if(bug==1){ 
- 			printf("\n\tTotal de votos: %d\n" ,tvotos-1);	/*nao deixa aparecer o infinito caso tenha 0 votos validos  (x/0 é indeterminação)*/
+ 			printf("\n\tTotal de votos: %d\n" ,tvotos-1);	/*nao deixa aparecer o infinito caso tenha 0 votos validos  (x/0 Ã© indeterminaÃ§Ã£o)*/
 		}
 		else{
 			printf("\n\tTotal de votos: %d\n" ,tvotos);		
@@ -145,7 +145,7 @@ void finalizar(){
 void votar(){
 	int i=0,opcao,confirmavoto;
 	
-	for(i=0;i<T;i++){ /*Procura o candidato e só mostra caso o numero digitado seja igual ao de algum candidato*/
+	for(i=0;i<T;i++){ /*Procura o candidato e sÃ³ mostra caso o numero digitado seja igual ao de algum candidato*/
 		if(lista[i].numero == input){
 			printf("\n\tNome: %s" ,lista[i].nome);
 			printf("\tPartido: %s" ,lista[i].partido);
@@ -211,7 +211,7 @@ void votar(){
 			votar();
 		}		
 	}
-	/*Caso tenha encontrado o candidato ele vai vir pra ca graças ao break;*/
+	/*Caso tenha encontrado o candidato ele vai vir pra ca graÃ§as ao break;*/
 	interface();
 	printf("\tEscolha uma opcao:\n\t");
 	scanf("%d" ,&opcao);
